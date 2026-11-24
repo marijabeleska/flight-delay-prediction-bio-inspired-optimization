@@ -13,8 +13,7 @@ __pycache__/
 
 # Local configuration and generated artifacts
 .env
-data/interim/
-data/processed/optimization_cache/
+data/
 models/
 
 # IDE / OS

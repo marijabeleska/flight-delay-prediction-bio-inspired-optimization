@@ -34,7 +34,7 @@ Additional runs with seeds 100 and 101 are included to examine the stability of 
 
 ```text
 config/       Data paths, feature settings, model settings, and search space
-data/         Locally generated interim and processed datasets
+data/         Local raw, interim, and processed datasets (excluded from Git)
 notebooks/    Presentation notebook with the complete project workflow
 reports/      Written project report
 results/      Saved metrics, tables, plots, models, and optimization histories
@@ -43,7 +43,7 @@ src/          Reusable Python package for data, features, models, and optimizati
 tests/        Automated tests
 ```
 
-Large raw data files are not duplicated in this repository. Their local locations are configured in [`config/default.yaml`](config/default.yaml), while generated datasets are stored under `data/processed/`.
+Data files are not stored in this repository. Raw-data locations are configured in [`config/default.yaml`](config/default.yaml), while datasets generated locally by the pipeline are written under `data/processed/`.
 
 ## Setup
 
