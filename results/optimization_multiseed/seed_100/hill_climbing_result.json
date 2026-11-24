@@ -1,0 +1,19 @@
+{
+  "kind": "additional_seed_validation_only",
+  "status": "complete",
+  "algorithm": "hill_climbing",
+  "seed": 100,
+  "objective_calls": 32,
+  "model_fits": 27,
+  "cache_hits": 5,
+  "best_validation_f1": 0.4314626094445242,
+  "best_params": {
+    "max_depth": 6,
+    "learning_rate": 0.10707937460224658,
+    "min_child_weight": 6.976225000000001,
+    "subsample": 0.79902621,
+    "scale_pos_weight": 4.6521375
+  },
+  "seconds": 381.79,
+  "test_used": false
+}

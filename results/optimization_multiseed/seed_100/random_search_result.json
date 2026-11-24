@@ -1,0 +1,19 @@
+{
+  "kind": "additional_seed_validation_only",
+  "status": "complete",
+  "algorithm": "random_search",
+  "seed": 100,
+  "objective_calls": 32,
+  "model_fits": 32,
+  "cache_hits": 0,
+  "best_validation_f1": 0.42794404684450227,
+  "best_params": {
+    "max_depth": 6,
+    "learning_rate": 0.09068406268371555,
+    "min_child_weight": 9.822439670268597,
+    "subsample": 0.9407629148338565,
+    "scale_pos_weight": 5.90278475891362
+  },
+  "seconds": 553.006,
+  "test_used": false
+}

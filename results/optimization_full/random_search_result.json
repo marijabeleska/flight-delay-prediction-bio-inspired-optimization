@@ -1,0 +1,16 @@
+{
+  "status": "complete",
+  "objective_calls": 32,
+  "model_fits": 32,
+  "cache_hits": 0,
+  "best_validation_f1": 0.4254546954262383,
+  "best_params": {
+    "max_depth": 6,
+    "learning_rate": 0.07464734737757235,
+    "min_child_weight": 8.935569090519689,
+    "subsample": 0.856610735527511,
+    "scale_pos_weight": 5.540057172119663
+  },
+  "seconds": 1124.402,
+  "test_used": false
+}

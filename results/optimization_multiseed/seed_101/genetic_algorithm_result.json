@@ -1,0 +1,19 @@
+{
+  "kind": "additional_seed_validation_only",
+  "status": "complete",
+  "algorithm": "genetic_algorithm",
+  "seed": 101,
+  "objective_calls": 32,
+  "model_fits": 32,
+  "cache_hits": 0,
+  "best_validation_f1": 0.42389560844496466,
+  "best_params": {
+    "max_depth": 7,
+    "learning_rate": 0.2593525616191724,
+    "min_child_weight": 9.067448680351905,
+    "subsample": 0.8956011730205278,
+    "scale_pos_weight": 6.327956989247312
+  },
+  "seconds": 477.867,
+  "test_used": false
+}

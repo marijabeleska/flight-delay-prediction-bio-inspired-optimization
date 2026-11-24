@@ -1,0 +1,10 @@
+algorithm,status,objective_calls,model_fits,cache_hits,best_validation_f1_smoke,seconds
+grid_search,passed,4,4,0,0.38212290502793295,2.621
+random_search,passed,4,4,0,0.31103286384976525,6.154
+hill_climbing,passed,4,4,0,0.34301675977653634,4.003
+tabu_search,passed,4,4,0,0.3233743409490334,5.368
+genetic_algorithm,passed,4,4,0,0.3662971175166297,8.354
+particle_swarm,passed,4,4,0,0.37766171153073524,6.043
+scipy_nelder_mead,passed,4,4,0,0.3251643753735804,7.367
+simulated_annealing,passed,4,4,0,0.31393298059964725,12.701
+bayesian_tpe,passed,4,4,0,0.3979427836708454,9.916

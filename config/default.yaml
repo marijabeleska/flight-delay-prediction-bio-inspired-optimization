@@ -1,0 +1,154 @@
+project:
+  random_seed: 42
+  timezone: Europe/Skopje
+
+data:
+  raw_dir: "C:/Users/Admin/Desktop/Analysis-of-the-impact-of-air-transport-events-in-Europe-to-the-Balkans/Analysis-of-the-impact-of-air-transport-events-in-Europe-to-the-Balkans/data/RawData"
+  hourly_delays: "C:/Users/Admin/Desktop/Analysis-of-the-impact-of-air-transport-events-in-Europe-to-the-Balkans/Analysis-of-the-impact-of-air-transport-events-in-Europe-to-the-Balkans/data/TimeSeries/hourly_delays.csv"
+  hourly_activity: "C:/Users/Admin/Desktop/Analysis-of-the-impact-of-air-transport-events-in-Europe-to-the-Balkans/Analysis-of-the-impact-of-air-transport-events-in-Europe-to-the-Balkans/data/TimeSeries/hourly_activity.csv"
+  processed_dir: data/processed
+  network_dataset: data/processed/balkan_flights_network.parquet
+
+prediction:
+  delay_threshold_minutes: 15
+  plausible_delay_range_minutes:
+    minimum: -180
+    maximum: 720
+  target_airports:
+    - BKPR
+    - LATI
+    - LBBG
+    - LBSF
+    - LDDU
+    - LDSP
+    - LDZA
+    - LQSA
+    - LWSK
+    - LYTV
+
+outputs:
+  audit_dir: results/data_audit
+  baseline_dir: results/baseline_logistic_regression
+  balanced_baseline_dir: results/baseline_logistic_regression_balanced
+  tree_baseline_dir: results/tree_baselines
+  model_comparison_dir: results/model_comparison
+  network_experiment_dir: results/network_xgboost
+  optimization_cache_dir: data/processed/optimization_cache
+  optimization_smoke_dir: results/optimization_smoke
+  optimization_full_dir: results/optimization_full
+
+timezones:
+  BKPR: Europe/Belgrade
+  LATI: Europe/Tirane
+  LBBG: Europe/Sofia
+  LBSF: Europe/Sofia
+  LDDU: Europe/Zagreb
+  LDSP: Europe/Zagreb
+  LDZA: Europe/Zagreb
+  LQSA: Europe/Sarajevo
+  LWSK: Europe/Skopje
+  LYTV: Europe/Podgorica
+
+network_features:
+  european_airports:
+    - EDDF
+    - EDDM
+    - EGKK
+    - EGLL
+    - EHAM
+    - EIDW
+    - LEBL
+    - LEMD
+    - LFPG
+    - LIRF
+  balkan_airports:
+    - BKPR
+    - LATI
+    - LBBG
+    - LBSF
+    - LDDU
+    - LDSP
+    - LDZA
+    - LQSA
+    - LWSK
+    - LYTV
+  lags_hours:
+    - 1
+    - 2
+    - 3
+  rolling_windows_hours:
+    - 3
+    - 6
+
+splits:
+  validation_start: "2022-01-01T00:00:00Z"
+  test_start: "2023-01-01T00:00:00Z"
+
+baseline:
+  categorical_features:
+    - origin
+    - destination
+    - route
+    - local_month
+    - local_day_of_week
+    - local_hour
+    - local_is_weekend
+    - local_season
+  numeric_features:
+    - local_year
+  logistic_regression:
+    solver: saga
+    max_iter: 500
+    tolerance: 0.001
+    threshold: 0.5
+    minimum_category_frequency: 5
+
+tree_baselines:
+  random_forest:
+    n_estimators: 150
+    max_depth: 20
+    min_samples_leaf: 5
+    max_features: sqrt
+    class_weight: balanced_subsample
+  xgboost:
+    n_estimators: 300
+    max_depth: 6
+    learning_rate: 0.1
+    subsample: 0.8
+    colsample_bytree: 0.8
+    tree_method: hist
+
+optimization:
+  objective: validation_f1
+  fixed_parameters:
+    n_estimators: 300
+    colsample_bytree: 0.8
+    tree_method: hist
+  search_space:
+    max_depth:
+      minimum: 3
+      maximum: 10
+      type: integer
+    learning_rate:
+      minimum: 0.02
+      maximum: 0.3
+      type: log_float
+    min_child_weight:
+      minimum: 1.0
+      maximum: 10.0
+      type: float
+    subsample:
+      minimum: 0.6
+      maximum: 1.0
+      type: float
+    scale_pos_weight:
+      minimum: 1.0
+      maximum: 6.5
+      type: float
+  full_budget_per_algorithm: 32
+  smoke:
+    budget_per_algorithm: 4
+    train_records: 20000
+    validation_records: 5000
+    n_estimators: 50
+

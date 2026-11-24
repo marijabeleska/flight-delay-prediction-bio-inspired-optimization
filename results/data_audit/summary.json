@@ -1,0 +1,21 @@
+{
+  "records": 300738,
+  "airports": 10,
+  "origins": 790,
+  "routes": 3186,
+  "date_start_utc": "2015-03-01T05:14:43+00:00",
+  "date_end_utc": "2023-06-30T22:07:55+00:00",
+  "delayed_records": 43482,
+  "delayed_percent": 14.458,
+  "missing_core_rows": 0,
+  "exact_duplicate_rows": 12,
+  "destination_mismatch_rows": 0,
+  "extreme_delay_rows": 12,
+  "delay_minutes": {
+    "minimum": -346.8166809082031,
+    "median": 1.850000023841858,
+    "mean": 2.7865865230560303,
+    "maximum": 1244.13330078125
+  },
+  "dataset_path": "data\\processed\\balkan_flights.parquet"
+}

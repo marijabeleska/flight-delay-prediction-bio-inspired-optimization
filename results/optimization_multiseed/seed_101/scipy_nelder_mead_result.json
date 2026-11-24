@@ -1,0 +1,19 @@
+{
+  "kind": "additional_seed_validation_only",
+  "status": "complete",
+  "algorithm": "scipy_nelder_mead",
+  "seed": 101,
+  "objective_calls": 32,
+  "model_fits": 32,
+  "cache_hits": 0,
+  "best_validation_f1": 0.4218298911836553,
+  "best_params": {
+    "max_depth": 7,
+    "learning_rate": 0.08157078389065425,
+    "min_child_weight": 5.337101988364609,
+    "subsample": 0.791143857358051,
+    "scale_pos_weight": 3.9658930119148317
+  },
+  "seconds": 486.185,
+  "test_used": false
+}

@@ -1,0 +1,25 @@
+name: flight-delay-bioopt
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - pip
+  - numpy
+  - pandas
+  - scipy
+  - scikit-learn
+  - imbalanced-learn
+  - xgboost
+  - optuna
+  - pyarrow
+  - matplotlib
+  - seaborn
+  - jupyterlab
+  - ipykernel
+  - joblib
+  - tqdm
+  - pyyaml
+  - pytest
+  - pip:
+      - scikit-opt==0.6.6
+

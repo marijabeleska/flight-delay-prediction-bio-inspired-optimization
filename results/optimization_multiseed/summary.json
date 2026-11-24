@@ -1,0 +1,89 @@
+{
+  "kind": "multiseed_validation_summary",
+  "test_used": false,
+  "note": "Original runs used algorithm-specific seeds 42..49. Additional runs use one shared explicit seed per seed directory.",
+  "completed_run_count": 27,
+  "algorithms": [
+    {
+      "algorithm": "bayesian_tpe",
+      "runs": 3,
+      "f1_mean": 0.4299234701494281,
+      "f1_std": 0.0046139288253326605,
+      "f1_best": 0.4332291201429209,
+      "f1_worst": 0.42465224111282845,
+      "mean_seconds": 500.23966666666666
+    },
+    {
+      "algorithm": "tabu_search",
+      "runs": 3,
+      "f1_mean": 0.4297747786700847,
+      "f1_std": 0.000584521460176735,
+      "f1_best": 0.43044451551007357,
+      "f1_worst": 0.429367420517863,
+      "mean_seconds": 413.3136666666667
+    },
+    {
+      "algorithm": "hill_climbing",
+      "runs": 3,
+      "f1_mean": 0.42933243974938645,
+      "f1_std": 0.0019545593212491287,
+      "f1_best": 0.4314626094445242,
+      "f1_worst": 0.4276215337634832,
+      "mean_seconds": 474.86266666666666
+    },
+    {
+      "algorithm": "genetic_algorithm",
+      "runs": 3,
+      "f1_mean": 0.4289561530252557,
+      "f1_std": 0.004419542964094688,
+      "f1_best": 0.432056974546094,
+      "f1_worst": 0.42389560844496466,
+      "mean_seconds": 495.46066666666667
+    },
+    {
+      "algorithm": "simulated_annealing",
+      "runs": 3,
+      "f1_mean": 0.42854381244408746,
+      "f1_std": 0.0036094499413160323,
+      "f1_best": 0.4313498081898474,
+      "f1_worst": 0.4244719346966254,
+      "mean_seconds": 429.92733333333337
+    },
+    {
+      "algorithm": "particle_swarm",
+      "runs": 3,
+      "f1_mean": 0.4261814172777872,
+      "f1_std": 0.0010881285244631696,
+      "f1_best": 0.4270758411252298,
+      "f1_worst": 0.4249699879951981,
+      "mean_seconds": 719.0843333333333
+    },
+    {
+      "algorithm": "random_search",
+      "runs": 3,
+      "f1_mean": 0.4254485052098509,
+      "f1_std": 0.0024986424937913348,
+      "f1_best": 0.42794404684450227,
+      "f1_worst": 0.42294677335881203,
+      "mean_seconds": 745.8963333333332
+    },
+    {
+      "algorithm": "grid_search",
+      "runs": 3,
+      "f1_mean": 0.42364628101991314,
+      "f1_std": 0.001020387176245035,
+      "f1_best": 0.4244470579308775,
+      "f1_worst": 0.42249738922870356,
+      "mean_seconds": 786.6446666666667
+    },
+    {
+      "algorithm": "scipy_nelder_mead",
+      "runs": 3,
+      "f1_mean": 0.4208358772588617,
+      "f1_std": 0.0010708543706352935,
+      "f1_best": 0.4218298911836553,
+      "f1_worst": 0.41970193912192877,
+      "mean_seconds": 511.69100000000003
+    }
+  ]
+}

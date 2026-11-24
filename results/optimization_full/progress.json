@@ -1,0 +1,161 @@
+{
+  "kind": "full_optimization_validation_only",
+  "test_loaded_by_optimizer": false,
+  "completed_algorithms": [
+    "grid_search",
+    "random_search",
+    "hill_climbing",
+    "tabu_search",
+    "genetic_algorithm",
+    "particle_swarm",
+    "scipy_nelder_mead",
+    "simulated_annealing",
+    "bayesian_tpe"
+  ],
+  "algorithms": {
+    "grid_search": {
+      "status": "complete",
+      "objective_calls": 32,
+      "model_fits": 32,
+      "cache_hits": 0,
+      "best_validation_f1": 0.4239943959001585,
+      "best_params": {
+        "max_depth": 3,
+        "learning_rate": 0.2999999999999999,
+        "min_child_weight": 10.0,
+        "subsample": 1.0,
+        "scale_pos_weight": 6.5
+      },
+      "seconds": 1201.892,
+      "test_used": false
+    },
+    "random_search": {
+      "status": "complete",
+      "objective_calls": 32,
+      "model_fits": 32,
+      "cache_hits": 0,
+      "best_validation_f1": 0.4254546954262383,
+      "best_params": {
+        "max_depth": 6,
+        "learning_rate": 0.07464734737757235,
+        "min_child_weight": 8.935569090519689,
+        "subsample": 0.856610735527511,
+        "scale_pos_weight": 5.540057172119663
+      },
+      "seconds": 1124.402,
+      "test_used": false
+    },
+    "hill_climbing": {
+      "status": "complete",
+      "objective_calls": 32,
+      "model_fits": 25,
+      "cache_hits": 7,
+      "best_validation_f1": 0.428913176040152,
+      "best_params": {
+        "max_depth": 6,
+        "learning_rate": 0.07745966692414832,
+        "min_child_weight": 6.69574225,
+        "subsample": 0.7,
+        "scale_pos_weight": 4.6521375
+      },
+      "seconds": 718.78,
+      "test_used": false
+    },
+    "tabu_search": {
+      "status": "complete",
+      "objective_calls": 32,
+      "model_fits": 25,
+      "cache_hits": 7,
+      "best_validation_f1": 0.4295123999823173,
+      "best_params": {
+        "max_depth": 6,
+        "learning_rate": 0.07745966692414832,
+        "min_child_weight": 5.5,
+        "subsample": 0.8,
+        "scale_pos_weight": 5.125
+      },
+      "seconds": 414.001,
+      "test_used": false
+    },
+    "genetic_algorithm": {
+      "status": "complete",
+      "objective_calls": 32,
+      "model_fits": 32,
+      "cache_hits": 0,
+      "best_validation_f1": 0.43091587608470844,
+      "best_params": {
+        "max_depth": 5,
+        "learning_rate": 0.16019699482671304,
+        "min_child_weight": 5.838709677419354,
+        "subsample": 0.9139784946236559,
+        "scale_pos_weight": 4.93010752688172
+      },
+      "seconds": 617.14,
+      "test_used": false
+    },
+    "particle_swarm": {
+      "status": "complete",
+      "objective_calls": 32,
+      "model_fits": 30,
+      "cache_hits": 2,
+      "best_validation_f1": 0.4270758411252298,
+      "best_params": {
+        "max_depth": 10,
+        "learning_rate": 0.059919549351445375,
+        "min_child_weight": 10.0,
+        "subsample": 0.6453088388890833,
+        "scale_pos_weight": 6.5
+      },
+      "seconds": 871.325,
+      "test_used": false
+    },
+    "scipy_nelder_mead": {
+      "status": "complete",
+      "objective_calls": 32,
+      "model_fits": 32,
+      "cache_hits": 0,
+      "best_validation_f1": 0.42097580147100105,
+      "best_params": {
+        "max_depth": 6,
+        "learning_rate": 0.07757150180289538,
+        "min_child_weight": 5.358489400000001,
+        "subsample": 0.7986209439999999,
+        "scale_pos_weight": 3.8941701799999997
+      },
+      "seconds": 559.354,
+      "test_used": false
+    },
+    "simulated_annealing": {
+      "status": "complete",
+      "objective_calls": 32,
+      "model_fits": 32,
+      "cache_hits": 0,
+      "best_validation_f1": 0.4313498081898474,
+      "best_params": {
+        "max_depth": 5,
+        "learning_rate": 0.1614939803817015,
+        "min_child_weight": 8.406542179709817,
+        "subsample": 0.9303354806516275,
+        "scale_pos_weight": 5.1112023632662344
+      },
+      "seconds": 513.513,
+      "test_used": false
+    },
+    "bayesian_tpe": {
+      "status": "complete",
+      "objective_calls": 32,
+      "model_fits": 32,
+      "cache_hits": 0,
+      "best_validation_f1": 0.4332291201429209,
+      "best_params": {
+        "max_depth": 5,
+        "learning_rate": 0.17801564691964994,
+        "min_child_weight": 5.604838972217232,
+        "subsample": 0.9438582033893169,
+        "scale_pos_weight": 4.396584813577327
+      },
+      "seconds": 551.238,
+      "test_used": false
+    }
+  }
+}

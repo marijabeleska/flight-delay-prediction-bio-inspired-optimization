@@ -1,0 +1,19 @@
+{
+  "kind": "additional_seed_validation_only",
+  "status": "complete",
+  "algorithm": "bayesian_tpe",
+  "seed": 100,
+  "objective_calls": 32,
+  "model_fits": 32,
+  "cache_hits": 0,
+  "best_validation_f1": 0.431889049192535,
+  "best_params": {
+    "max_depth": 5,
+    "learning_rate": 0.22580784485369648,
+    "min_child_weight": 7.382951761100552,
+    "subsample": 0.8112940642000075,
+    "scale_pos_weight": 4.943599352377627
+  },
+  "seconds": 429.771,
+  "test_used": false
+}

@@ -1,0 +1,28 @@
+{
+  "kind": "additional_seed_validation_only",
+  "seed": 101,
+  "budget_per_algorithm": 32,
+  "test_loaded_by_optimizer": false,
+  "requested_algorithms": [
+    "grid_search",
+    "random_search",
+    "hill_climbing",
+    "tabu_search",
+    "genetic_algorithm",
+    "particle_swarm",
+    "scipy_nelder_mead",
+    "simulated_annealing",
+    "bayesian_tpe"
+  ],
+  "completed_algorithms": [
+    "grid_search",
+    "random_search",
+    "hill_climbing",
+    "tabu_search",
+    "genetic_algorithm",
+    "particle_swarm",
+    "scipy_nelder_mead",
+    "simulated_annealing",
+    "bayesian_tpe"
+  ]
+}

@@ -1,0 +1,147 @@
+{
+  "original_records": 300738,
+  "duplicate_copies_removed": 6,
+  "extreme_rows_retained": 12,
+  "threshold": 0.5,
+  "xgboost_scale_pos_weight": 6.457521,
+  "models": {
+    "random_forest": {
+      "model": "Random Forest",
+      "training_seconds": 28.509,
+      "splits": {
+        "train": {
+          "records": 238320,
+          "positive_records": 31957,
+          "positive_percent": 13.4093,
+          "predicted_positive_percent": 39.2393,
+          "accuracy": 0.653256,
+          "precision": 0.229033,
+          "recall": 0.670213,
+          "f1": 0.341399,
+          "roc_auc": 0.726717,
+          "confusion_matrix": [
+            [
+              134266,
+              72097
+            ],
+            [
+              10539,
+              21418
+            ]
+          ]
+        },
+        "validation": {
+          "records": 40073,
+          "positive_records": 7639,
+          "positive_percent": 19.0627,
+          "predicted_positive_percent": 6.9922,
+          "accuracy": 0.798343,
+          "precision": 0.421128,
+          "recall": 0.15447,
+          "f1": 0.226032,
+          "roc_auc": 0.674626,
+          "confusion_matrix": [
+            [
+              30812,
+              1622
+            ],
+            [
+              6459,
+              1180
+            ]
+          ]
+        },
+        "test": {
+          "records": 22339,
+          "positive_records": 3885,
+          "positive_percent": 17.3911,
+          "predicted_positive_percent": 9.0649,
+          "accuracy": 0.806616,
+          "precision": 0.392593,
+          "recall": 0.204633,
+          "f1": 0.269036,
+          "roc_auc": 0.687458,
+          "confusion_matrix": [
+            [
+              17224,
+              1230
+            ],
+            [
+              3090,
+              795
+            ]
+          ]
+        }
+      }
+    },
+    "xgboost": {
+      "model": "XGBoost",
+      "training_seconds": 5.603,
+      "splits": {
+        "train": {
+          "records": 238320,
+          "positive_records": 31957,
+          "positive_percent": 13.4093,
+          "predicted_positive_percent": 40.8224,
+          "accuracy": 0.660897,
+          "precision": 0.2489,
+          "recall": 0.757737,
+          "f1": 0.374715,
+          "roc_auc": 0.774657,
+          "confusion_matrix": [
+            [
+              133290,
+              73073
+            ],
+            [
+              7742,
+              24215
+            ]
+          ]
+        },
+        "validation": {
+          "records": 40073,
+          "positive_records": 7639,
+          "positive_percent": 19.0627,
+          "predicted_positive_percent": 11.3717,
+          "accuracy": 0.777556,
+          "precision": 0.360105,
+          "recall": 0.214819,
+          "f1": 0.269105,
+          "roc_auc": 0.679901,
+          "confusion_matrix": [
+            [
+              29518,
+              2916
+            ],
+            [
+              5998,
+              1641
+            ]
+          ]
+        },
+        "test": {
+          "records": 22339,
+          "positive_records": 3885,
+          "positive_percent": 17.3911,
+          "predicted_positive_percent": 10.1571,
+          "accuracy": 0.800528,
+          "precision": 0.374174,
+          "recall": 0.218533,
+          "f1": 0.275918,
+          "roc_auc": 0.699605,
+          "confusion_matrix": [
+            [
+              17034,
+              1420
+            ],
+            [
+              3036,
+              849
+            ]
+          ]
+        }
+      }
+    }
+  }
+}

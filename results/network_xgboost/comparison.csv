@@ -1,0 +1,5 @@
+model,split,precision,recall,f1,roc_auc,accuracy,predicted_positive_percent
+xgboost_base,validation,0.360105,0.214819,0.269105,0.679901,0.777556,11.3717
+xgboost_base,test,0.374174,0.218533,0.275918,0.699605,0.800528,10.1571
+xgboost_network,validation,0.295589,0.714884,0.418243,0.720368,0.620892,46.1034
+xgboost_network,test,0.271487,0.732561,0.396158,0.721433,0.611621,46.9269

@@ -1,0 +1,87 @@
+{
+  "model": "LogisticRegression",
+  "class_weight": "balanced",
+  "threshold": 0.5,
+  "features": [
+    "origin",
+    "destination",
+    "route",
+    "local_month",
+    "local_day_of_week",
+    "local_hour",
+    "local_is_weekend",
+    "local_season",
+    "local_year"
+  ],
+  "original_records": 300738,
+  "duplicate_copies_removed": 6,
+  "extreme_rows_retained": 12,
+  "training_seconds": 6.656,
+  "model_iterations": 28,
+  "converged_before_max_iter": true,
+  "splits": {
+    "train": {
+      "records": 238320,
+      "positive_records": 31957,
+      "positive_percent": 13.4093,
+      "predicted_positive_percent": 42.1467,
+      "accuracy": 0.634454,
+      "precision": 0.225419,
+      "recall": 0.708515,
+      "f1": 0.342022,
+      "roc_auc": 0.726827,
+      "confusion_matrix": [
+        [
+          128561,
+          77802
+        ],
+        [
+          9315,
+          22642
+        ]
+      ]
+    },
+    "validation": {
+      "records": 40073,
+      "positive_records": 7639,
+      "positive_percent": 19.0627,
+      "predicted_positive_percent": 30.5867,
+      "accuracy": 0.706585,
+      "precision": 0.331974,
+      "recall": 0.532661,
+      "f1": 0.409027,
+      "roc_auc": 0.702407,
+      "confusion_matrix": [
+        [
+          24246,
+          8188
+        ],
+        [
+          3570,
+          4069
+        ]
+      ]
+    },
+    "test": {
+      "records": 22339,
+      "positive_records": 3885,
+      "positive_percent": 17.3911,
+      "predicted_positive_percent": 30.5699,
+      "accuracy": 0.710014,
+      "precision": 0.310148,
+      "recall": 0.545174,
+      "f1": 0.395371,
+      "roc_auc": 0.703619,
+      "confusion_matrix": [
+        [
+          13743,
+          4711
+        ],
+        [
+          1767,
+          2118
+        ]
+      ]
+    }
+  }
+}

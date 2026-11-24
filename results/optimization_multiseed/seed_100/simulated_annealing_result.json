@@ -1,0 +1,19 @@
+{
+  "kind": "additional_seed_validation_only",
+  "status": "complete",
+  "algorithm": "simulated_annealing",
+  "seed": 100,
+  "objective_calls": 32,
+  "model_fits": 32,
+  "cache_hits": 0,
+  "best_validation_f1": 0.42980969444578954,
+  "best_params": {
+    "max_depth": 4,
+    "learning_rate": 0.1307809588839655,
+    "min_child_weight": 10.0,
+    "subsample": 0.6928033609051307,
+    "scale_pos_weight": 4.407888612056964
+  },
+  "seconds": 373.58,
+  "test_used": false
+}

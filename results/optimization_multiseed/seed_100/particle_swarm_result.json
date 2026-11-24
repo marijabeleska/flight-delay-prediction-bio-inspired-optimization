@@ -1,0 +1,19 @@
+{
+  "kind": "additional_seed_validation_only",
+  "status": "complete",
+  "algorithm": "particle_swarm",
+  "seed": 100,
+  "objective_calls": 32,
+  "model_fits": 32,
+  "cache_hits": 0,
+  "best_validation_f1": 0.4249699879951981,
+  "best_params": {
+    "max_depth": 4,
+    "learning_rate": 0.1229963238266382,
+    "min_child_weight": 8.43267479594543,
+    "subsample": 0.6546826358739811,
+    "scale_pos_weight": 4.163013311849875
+  },
+  "seconds": 656.026,
+  "test_used": false
+}
